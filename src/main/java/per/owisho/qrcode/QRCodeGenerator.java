@@ -124,8 +124,9 @@ public class QRCodeGenerator {
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		FileOutputStream os = new FileOutputStream(new File("C:\\Users\\Administrator\\Desktop\\府前.png"));
-		Font font = new Font("宋体",Font.BOLD,190);
-		ILogoGenerator logoGenerator = new LogoGenerator(600, 600, "府前", font);
+//		Font font = new Font("宋体",Font.BOLD,190);
+//		ILogoGenerator logoGenerator = new LogoGenerator(600, 600, "府前", font);
+		ILogoGenerator logoGenerator = new LogoGeneratorForYBT();
 		createQRCode("http://www.baidu.com", 900, 900, os, 270, 270, logoGenerator);
 	}
 	
