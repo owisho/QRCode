@@ -10,7 +10,7 @@ import java.io.OutputStream;
 
 import javax.imageio.ImageIO;
 
-public class LogoGeneratorForYBT implements ILogoGenerator{
+public class LogoGeneratorWithPicBackground implements ILogoGenerator{
 
 	@Override
 	public void generate(OutputStream os) {
